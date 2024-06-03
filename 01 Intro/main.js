@@ -109,3 +109,10 @@ switch (counter) {
 
 for (let i = 0; i < 10; i++) {
 }
+
+// -------- Math
+Math.pow(2, 10);    // 1024
+
+Math.round(4.5);    // 5
+Math.ceil(4.1);     // 5 
+Math.floor(4.9);    // 4 

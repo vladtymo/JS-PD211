@@ -51,6 +51,10 @@ arr = [10, "10", true, [1, 2, 3], coord, (a, b) => a + b];
 console.log(arr[4].y);
 console.log(arr[5](4, 10));
 
+// ------ constants
+const koef = 3.88;
+//koef += 10; // error
+
 // -------------- Browser Dialogs --------------
 // ------ alert()
 // alert("Some alert!");

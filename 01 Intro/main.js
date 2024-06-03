@@ -50,3 +50,58 @@ arr = [10, "10", true, [1, 2, 3], coord, (a, b) => a + b];
 
 console.log(arr[4].y);
 console.log(arr[5](4, 10));
+
+// -------------- Browser Dialogs --------------
+// ------ alert()
+// alert("Some alert!");
+
+// string concatenation str + str
+// alert("Hello, dear: " + username);
+// string interpolation: `str ${...}`
+// alert(`Hello, dear: ${username}`);
+
+// ------ prompt()
+// convert to number: +"str" Number(value)
+let year = +prompt("Enter current year:");
+
+console.log(`Current year is ${year}`);
+console.log(`Next year is ${year + 1}`);
+
+console.log("1" + "1"); // string + string
+console.log(1 + 1);     // number + number
+
+console.log("1" + 1); // string + number = string
+console.log("5" * "3"); // string * string = number
+
+// ------ confirm()
+let like = confirm("Do you like JS?");
+
+if (like) {
+    console.log("Super");
+}
+else {
+    console.log("Bad");
+}
+
+// thernary operator: (condition) ? true_value : false_value
+console.log(like == true ? "Super" : "Bad");
+
+// -------------- statements --------------
+if (5 > 10)
+    console.log("if");
+else {
+
+}
+
+switch (counter) {
+    case 1:
+        break;
+    case 2:
+        break;
+
+    default:
+        break;
+}
+
+for (let i = 0; i < 10; i++) {
+}

@@ -15,10 +15,10 @@ let letter2 = 'F';              // string
 
 let msg = "Hello \"dear\" 'Vlad'"; // string
 
-let isValid = true;
+let isValid = true;             // boolean
 
-let selectedProduct = null;
-let undefinedValue = undefined; // bad practice
+let selectedProduct = null;     // null
+let undefinedValue = undefined; // undefined (bad practice)
 
 let arr = [1, 2, 3];
 
@@ -57,12 +57,12 @@ const koef = 3.88;
 
 // -------------- Browser Dialogs --------------
 // ------ alert()
-// alert("Some alert!");
+alert("Some alert!");
 
 // string concatenation str + str
-// alert("Hello, dear: " + username);
+alert("Hello, dear: " + username);
 // string interpolation: `str ${...}`
-// alert(`Hello, dear: ${username}`);
+alert(`Hello, dear: ${username}`);
 
 // ------ prompt()
 // convert to number: +"str" Number(value)
@@ -109,10 +109,3 @@ switch (counter) {
 
 for (let i = 0; i < 10; i++) {
 }
-
-// -------- Math
-Math.pow(2, 10);    // 1024
-
-Math.round(4.5);    // 5
-Math.ceil(4.1);     // 5 
-Math.floor(4.9);    // 4 

@@ -52,6 +52,10 @@ class Product {
         if (value >= 0) // data validation
             this.#price = value;
     }
+    get price() {
+        return this.#price;
+    }
+
     get total() {
         return this.#price * this.#quantity;
     }
@@ -129,6 +133,7 @@ class Monitor extends Product {
     show() {
         super.show(); // base method
         console.log(`Screen: ${this.resolution.w}x${this.resolution.h}, ${this.type}`);
+        document.write(`<p>Monitor: ${this.name} - ${this.price}$</p>`);
     }
 
     // add new methods

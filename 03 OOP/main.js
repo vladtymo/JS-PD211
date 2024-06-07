@@ -155,3 +155,8 @@ function showProduct(item) {
 
 showProduct(my);        // polymorphism
 showProduct(myMonitor); // polymorphism
+
+// TASK 3: start
+class ExtendedDate extends Date {
+    // ... code ...
+}

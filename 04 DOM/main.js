@@ -62,9 +62,9 @@ list.children[3].remove();
 
 // ----------------- working with CSS classes
 // 1 - using style property
-// newItem.style.textTransform = "uppercase";
-// newItem.style.backgroundColor = "yellow";
-// newItem.style.fontSize = '24px';
+newItem.style.textTransform = "uppercase";
+newItem.style.backgroundColor = "yellow";
+newItem.style.fontSize = '24px';
 
 // // 2 - using CSS classes
 newItem.classList.remove('important');

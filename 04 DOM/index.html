@@ -20,9 +20,7 @@
 
     <!-- Emmet: ul>li* -->
     <ul id="main-list" class="my-list">
-        Text Element
         <li>Modify HTML elements on the page</li>
-        Text Element
         <li>Modify attributes</li>
         <li id="third-item" class="important">Change <abbr>CSS</abbr> <abbr>CSS</abbr> styles</li>
         <li class="important">Delete existing HTML elements and attributes</li>
@@ -36,10 +34,18 @@
         <li>My super list element!</li>
     </ul>
 
-    <p>DOM methods are actions you can perform (on HTML Elements).</p>
-    <p>DOM properties are values (of HTML Elements) that you can set or change.</p>
+    <h2>Create New Item</h2>
+    <form>
+        <label>
+            <span>Name:</span>
+            <input type="text">
+        </label>
+        <button type="submit">Add</button>
+    </form>
+    <p>* double-click to remove new items</p>
 
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./events.js"></script>
 </body>
 
 </html>

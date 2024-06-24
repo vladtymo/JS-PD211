@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks</title>
+    <style>
+        .block {
+            width: 150px;
+            height: 70px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .color-0 {
+            background-color: aquamarine;
+        }
+
+        .color-1 {
+            background-color: brown;
+        }
+
+        .color-2 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Block Generator</h1>
+
+    <div class="container">
+        <!-- <div class="block color-1"></div>
+        <div class="block color-0"></div>
+        <div class="block color-1" ondblclick="removeBlock(this)"></div>
+        <div class="block color-2" ondblclick="removeBlock(this)"></div> -->
+    </div>
+
+    <button id="genBtn">Generate Block</button>
+    <button id="clearBtn">Clear Blocks</button>
+
+    <script>
+        // this is js...
+        // onclick
+        const genBtn = document.querySelector('#genBtn');
+        const container = document.querySelector('.container');
+
+        genBtn.onclick = () => {
+            //alert("Generating...");
+            // add new block
+
+            const randomColor = Math.floor(Math.random() * 3);
+
+            // element.innerHTML += 'content'
+            container.innerHTML += `<div class="block color-${randomColor}" ondblclick="removeBlock(this)"></div>`;
+        }
+
+        function removeBlock(item) {
+            item.remove();
+        }
+
+    </script>
+</body>
+
+</html>

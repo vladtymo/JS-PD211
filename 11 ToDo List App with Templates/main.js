@@ -28,13 +28,20 @@ form.onsubmit = (e) => {
 }
 
 function addItemToList(task) {
-    list.innerHTML += ` <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">${task.title}</div>
-                                ${task.deadline.toLocaleString()}
-                            </div>
-                                ${task.flagged ? '<span class="text-danger"><i class="bi bi-flag-fill"></i></span>' : ''}
-                            </li>`;
+
+    const data = {
+        ...task,
+        deadline: task.deadline.toLocaleString()
+    }
+
+    console.log(data);
+
+    // Використання шаблону та додавання на сторінку
+    const source = document.getElementById('todoItemTemplate').innerHTML;
+    const template = Handlebars.compile(source);
+    const html = template(data);
+
+    list.innerHTML += html;
 }
 
 function save() {
